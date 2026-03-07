@@ -6,12 +6,17 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Farai Rwambiwa</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Farai Rwambiwa. Web development fundamentals home page.">
     <meta name="author" content="Farai Rwambiwa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
             <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
             <a href="https://byupw.instructure.com/">I-Learn</a>
@@ -20,13 +25,19 @@
         </nav>
     </header>
     <main>
+        <h1>Farai Rwambiwa</h1>
         <section class="card">
             <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile picture of Farai Rwambiwa" width="150">
-            <p>My name is Farai Rwambiwa and I live in Zimbabwe. I am currently pursuing a software development degree and I enjoy building web apps in React. I love tech and my ultimate goal is to be impactful for Christ through technology. When I'm not coding, I love playing chess, watching cricket and the NBA, and studying the gospel.</p>
-            
-            <h3>Zimbabwe</h3>
-            <img src="images/zimbabwe-flag.jpg" alt="Official Flag of Zimbabwe" width="150">
+            <div class="card-content">
+                <p>My name is Farai and I live in Zimbabwe. I am pursuing a software development degree and building web apps in React. I want to be impactful for Christ through technology. I also love playing chess, watching cricket and the NBA.</p>
+                <img src="images/profile.jpg" alt="Profile picture of Farai Rwambiwa" width="150">
+            </div>
+            <hr>
+            <h3 class="location">Harare, Zimbabwe</h3>
+            <div class="card-content">
+                <img src="images/zimbabwe.jpg" alt="Official Flag of Zimbabwe" width="150">
+                <p>Zimbabwe is a beautiful country in southern Africa, known for the majestic Victoria Falls and diverse wildlife. It has a rich cultural heritage and warm, welcoming people.</p>
+            </div>
         </section>
         <section class="card">
             <h2>Web Dev Resources</h2>

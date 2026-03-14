@@ -14,13 +14,13 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         display: flex;
         flex-direction: row;
         background-color: transparent;
     }
 
-    .navigation a {
+    nav a {
         padding: 1rem;
     }
 

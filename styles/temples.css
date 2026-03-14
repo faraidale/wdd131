@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #4a148c;
     --text-light: #ffffff;
@@ -84,15 +88,17 @@ h1 {
     grid-template-columns: 1fr;
     gap: 20px;
     align-items: center;
+    width: 100%;
 }
 
 figure {
     margin: 0;
     text-align: center;
+    min-width: 0;
 }
 
 figure img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);

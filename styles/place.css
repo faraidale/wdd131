@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #006400; /* Zimbabwe Green */
-    --accent-color: #FFD200;  /* Zimbabwe Yellow */
+    --zim-green: #007a33;
+    --zim-red: #c60c30;
+    --zim-gold: #fcb514;
     --text-dark: #333333;
     --bg-light: #f4f4f4;
-    --card-bg: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.85); /* 85% solid white for transparency */
 }
 
 body {
@@ -15,10 +16,11 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--zim-red);
     color: white;
     text-align: center;
     padding: 1.5rem;
+    border-bottom: 5px solid var(--zim-green);
 }
 
 header h1 {
@@ -26,7 +28,19 @@ header h1 {
     letter-spacing: 2px;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .hero {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* This is the magic rule that allows overlaying */
+}
+
+.hero picture {
+    display: block;
     width: 100%;
 }
 
@@ -37,26 +51,17 @@ header h1 {
     object-fit: cover;
 }
 
-.info-container {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .card {
     background-color: var(--card-bg);
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 2px solid var(--zim-gold); /* Subtle gold accent */
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .card h2 {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--accent-color);
+    color: var(--zim-green);
+    border-bottom: 2px solid var(--zim-red);
     padding-bottom: 0.5rem;
     margin-top: 0;
     display: flex;
@@ -74,22 +79,29 @@ header h1 {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--zim-green);
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    border-top: 5px solid var(--zim-gold);
 }
 
-/* Desktop / Wider View */
+/* Desktop / Wider View Wireframe Alignment */
 @media (min-width: 768px) {
-    .info-container {
-        flex-direction: row;
-        align-items: flex-start;
+    .card {
+        position: absolute; /* Pulls cards over the top of the image */
+        width: 300px;
+        margin: 0; 
     }
 
-    .data, .weather {
-        flex: 1;
+    .data {
+        top: 40px;
+        left: 40px;
+    }
+
+    .weather {
+        bottom: 40px;
+        right: 40px;
     }
 
     /* Hide the SVG image icon in wider view */

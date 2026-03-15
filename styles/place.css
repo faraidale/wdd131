@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #006400; /* Zimbabwe Green */
+    --accent-color: #FFD200;  /* Zimbabwe Yellow */
+    --text-dark: #333333;
+    --bg-light: #f4f4f4;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.info-container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.weather-icon {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Desktop / Wider View */
+@media (min-width: 768px) {
+    .info-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .data, .weather {
+        flex: 1;
+    }
+
+    /* Hide the SVG image icon in wider view */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Show Emoticon pseudo-element in wider view */
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+    }
+}

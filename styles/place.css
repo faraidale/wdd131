@@ -66,9 +66,10 @@ main {
     background-color: var(--pure-white);
     color: var(--pure-black);
     padding: 0.5rem 1.5rem;
-    /* Pulls the white background to the top-left edge, just like Madagascar */
+    /* Pulls the white background to the top-left edge */
     margin: -1.5rem 0 1rem -1.5rem; 
-    display: inline-flex; /* Prevents the white box from stretching across the whole tab */
+    display: flex; /* Changed from inline-flex */
+    width: 75%; /* Stretches the label across the card */
     align-items: center;
     font-size: 1.2rem;
 }

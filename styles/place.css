@@ -19,10 +19,10 @@ header {
     color: var(--pure-white);
     text-align: center;
     padding: 1.5rem;
-    /* Stacked Gold and Black Border */
     border-bottom: 4px solid var(--vibrant-gold);
-    box-shadow: 0 4px 0 var(--pure-black);
-    margin-bottom: 2px; /* Thinner white gap */
+    /* This creates the Black line, followed by a thin White line underneath */
+    box-shadow: 0 4px 0 var(--pure-black), 0 6px 0 var(--pure-white);
+    margin-bottom: 6px; /* Makes room so shadows don't cover the picture */
 }
 
 header h1 {
@@ -65,13 +65,12 @@ main {
 .card h2 {
     background-color: var(--pure-white);
     color: var(--pure-black);
-    padding: 0.8rem 1.5rem; /* Made it slightly taller */
-    /* Leaves a small gap at the top, but stays flush left */
-    margin: -0.8rem 0 1rem -1.5rem; 
+    padding: 0.4rem 1.5rem; /* Much thinner height now */
+    margin: -0.5rem 0 1rem -1.5rem; /* Keeps the small gap at the top */
     display: flex; 
     width: 75%; /* Stretches the label across the card */
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Slightly smaller text to fit the thinner label */
 }
 
 .label {
@@ -89,10 +88,10 @@ footer {
     color: var(--pure-white);
     text-align: center;
     padding: 1rem;
-    /* Stacked Gold and Black Border on top */
     border-top: 4px solid var(--vibrant-gold);
-    box-shadow: 0 -4px 0 var(--pure-black);
-    margin-top: 2px; /* Thinner white gap */
+    /* This creates the Black line, followed by a thin White line on top */
+    box-shadow: 0 -4px 0 var(--pure-black), 0 -6px 0 var(--pure-white);
+    margin-top: 6px; /* Makes room for the shadows */
 }
 
 /* Desktop / Wider View Wireframe Alignment */

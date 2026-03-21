@@ -22,7 +22,7 @@ header {
     /* Stacked Gold and Black Border */
     border-bottom: 4px solid var(--vibrant-gold);
     box-shadow: 0 4px 0 var(--pure-black);
-    margin-bottom: 4px; 
+    margin-bottom: 2px; /* Thinner white gap */
 }
 
 header h1 {
@@ -65,10 +65,10 @@ main {
 .card h2 {
     background-color: var(--pure-white);
     color: var(--pure-black);
-    padding: 0.5rem 1.5rem;
-    /* Pulls the white background to the top-left edge */
-    margin: -1.5rem 0 1rem -1.5rem; 
-    display: flex; /* Changed from inline-flex */
+    padding: 0.8rem 1.5rem; /* Made it slightly taller */
+    /* Leaves a small gap at the top, but stays flush left */
+    margin: -0.8rem 0 1rem -1.5rem; 
+    display: flex; 
     width: 75%; /* Stretches the label across the card */
     align-items: center;
     font-size: 1.2rem;
@@ -92,7 +92,7 @@ footer {
     /* Stacked Gold and Black Border on top */
     border-top: 4px solid var(--vibrant-gold);
     box-shadow: 0 -4px 0 var(--pure-black);
-    margin-top: 0; 
+    margin-top: 2px; /* Thinner white gap */
 }
 
 /* Desktop / Wider View Wireframe Alignment */

@@ -92,7 +92,7 @@ footer {
     /* Stacked Gold and Black Border on top */
     border-top: 4px solid var(--vibrant-gold);
     box-shadow: 0 -4px 0 var(--pure-black);
-    margin-top: 2rem; 
+    margin-top: 0; 
 }
 
 /* Desktop / Wider View Wireframe Alignment */

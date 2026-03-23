@@ -46,7 +46,7 @@ const temples = [
       location: "Kensington, Maryland, United States",
       dedicated: "1974, November, 19",
       area: 156558,
-      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpg"
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
     {
       templeName: "Lima Perú",

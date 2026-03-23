@@ -49,17 +49,17 @@ header {
     content: "✕";
 }
 
-.navigation {
+nav {
     display: none;
     flex-direction: column;
     background-color: #380b6b;
 }
 
-.navigation.open {
+nav.open {
     display: flex;
 }
 
-.navigation a {
+nav a {
     color: var(--text-light);
     text-decoration: none;
     padding: 15px;
@@ -67,7 +67,7 @@ header {
     display: block;
 }
 
-.navigation a:hover, .navigation a.active {
+nav a:hover, nav a.active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -150,13 +150,13 @@ footer {
         display: none;
     }
 
-    .navigation {
+    nav {
         display: flex;
         flex-direction: row;
         background-color: transparent;
     }
 
-    .navigation a {
+    nav a {
         padding: 1rem;
     }
 

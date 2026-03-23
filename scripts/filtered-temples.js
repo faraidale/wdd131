@@ -68,7 +68,7 @@ const temples = [
         location: "Harare, Zimbabwe",
         dedicated: "2025, December, 14", // Anticipated dedication
         area: 17250,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/harare-zimbabwe-temple/harare-zimbabwe-temple-42539-main.jpg"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/harare-zimbabwe-temple/harare-zimbabwe-temple-67717.jpg"
     },
     {
         templeName: "Johannesburg South Africa",

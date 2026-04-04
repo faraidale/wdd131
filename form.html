@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form - Farai Rwambiwa</title>
-    <meta name="description" content="Product Review Form for WDD 131">
+    <meta name="description" content="Please fill out this product review form to help us improve our services and share your valuable feedback on your recent installation.">
     <meta name="author" content="Farai Rwambiwa">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,26 @@
 
                 <label>Overall Rating <span class="required">*</span></label>
                 <div class="rating-group">
-                    <label><input type="radio" name="rating" value="1" required> ☆</label>
-                    <label><input type="radio" name="rating" value="2" required> ☆☆</label>
-                    <label><input type="radio" name="rating" value="3" required> ☆☆☆</label>
-                    <label><input type="radio" name="rating" value="4" required> ☆☆☆☆</label>
-                    <label><input type="radio" name="rating" value="5" required> ☆☆☆☆☆</label>
+                    <div class="input-row">
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        <label for="star1">☆</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                        <label for="star2">☆☆</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                        <label for="star3">☆☆☆</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                        <label for="star4">☆☆☆☆</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">☆☆☆☆☆</label>
+                    </div>
                 </div>
 
                 <label for="installDate">Date of Installation <span class="required">*</span></label>
@@ -41,10 +56,24 @@
 
             <fieldset>
                 <legend>Which features did you find useful? (Check all that apply)</legend>
-                <label class="checkbox-label"><input type="checkbox" name="features" value="Durability"> Durability</label>
-                <label class="checkbox-label"><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
-                <label class="checkbox-label"><input type="checkbox" name="features" value="Performance"> Performance</label>
-                <label class="checkbox-label"><input type="checkbox" name="features" value="Design"> Design</label>
+                <div class="checkbox-group">
+                    <div class="input-row">
+                        <input type="checkbox" id="feat1" name="features" value="Durability">
+                        <label for="feat1">Durability</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="feat2" name="features" value="Ease of Use">
+                        <label for="feat2">Ease of Use</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="feat3" name="features" value="Performance">
+                        <label for="feat3">Performance</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="feat4" name="features" value="Design">
+                        <label for="feat4">Design</label>
+                    </div>
+                </div>
             </fieldset>
 
             <fieldset>

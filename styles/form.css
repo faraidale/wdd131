@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #380b6b;
+    --bg-color: #f4f4f4;
+    --text-dark: #333;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: var(--text-dark);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.required {
+    color: #d9534f;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rating-group label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #27064d;
+}
+
+.review-confirmation {
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.counter {
+    font-size: 1.2rem;
+    background-color: #e2e2e2;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}

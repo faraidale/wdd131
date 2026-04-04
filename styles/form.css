@@ -69,22 +69,27 @@ textarea {
     font-family: inherit;
 }
 
-.rating-group {
+.rating-group, .checkbox-group {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-.rating-group label, .checkbox-label {
+.input-row {
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.input-row label {
+    margin: 0;
     font-weight: normal;
-    margin-top: 0;
 }
 
 input[type="radio"], input[type="checkbox"] {
-    margin-right: 10px;
     transform: scale(1.2);
+    margin: 0;
 }
 
 .submit-btn {
@@ -132,4 +137,14 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+}
+
+/* Desktop Media Query */
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+    }
+    form {
+        padding: 2.5rem;
+    }
 }

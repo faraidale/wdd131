@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Session - Elpo Interview Coaching</title>
-    <meta name="description" content="Book your 1-on-1 mock interview session with Elpo experts today.">
     <meta name="author" content="Farai Rwambiwa">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,21 +21,34 @@
         </nav>
     </header>
     <main>
-        <h2>Book Your Mock Interview</h2>
+        <h2>Book Your Session</h2>
         <div id="bookingMessage"></div>
         <form id="bookingForm">
             <label for="fullName">Full Name *</label>
             <input type="text" id="fullName" name="fullName" required>
             
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="sessionType">Session Type *</label>
-            <select id="sessionType" name="sessionType" required>
-                <option value="" disabled selected>Select a session...</option>
-                <option value="behavioral">Behavioral Mock Interview</option>
-                <option value="technical">Technical Mock Interview</option>
+            <label for="serviceCategory">Service Category *</label>
+            <select id="serviceCategory" name="serviceCategory" required>
+                <option value="" disabled selected>Select a category...</option>
+                <option value="Medical Interview">Medical Interview</option>
+                <option value="Tech Interview">Tech Interview</option>
+                <option value="Marketing Interview">Marketing Interview</option>
+                <option value="Internship Interview">Internship Interview</option>
+                <option value="Admissions Interview">Admissions Interview</option>
+                <option value="BYU Endorsement">BYU Endorsement Interview</option>
+                <option value="General Interview">General Interview</option>
+                <option value="LinkedIn Optimization">LinkedIn Profile Optimization</option>
+                <option value="Job Search Strategy">Job Search Strategy</option>
             </select>
+
+            <label>Session Format *</label>
+            <div class="radio-group" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                <label><input type="radio" name="format" value="Online" required> Online</label>
+                <label><input type="radio" name="format" value="In-Person" required> In-Person</label>
+            </div>
+
+            <label for="timeSlot">Preferred Time Slot *</label>
+            <input type="time" id="timeSlot" name="timeSlot" required>
             
             <button type="submit" class="btn">Confirm Booking</button>
         </form>

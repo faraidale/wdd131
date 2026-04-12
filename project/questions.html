@@ -22,38 +22,46 @@
         </nav>
     </header>
     <main>
-        <h2>Preparation Resources</h2>
+        <h2>Preparation Resources & Question Banks</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Select a category below to access industry-specific interview questions, or view our recommended reading materials.</p>
         
-        <div class="resource-card">
-            <h3>LinkedIn Profile Optimization</h3>
-            <p>Ensure recruiters find you before you even apply. Elpo provides comprehensive profile audits.</p>
-            <ul class="question-list">
-                <li>Professional headline and summary optimization.</li>
-                <li>Strategic keyword placement for your target industry.</li>
-                <li>Experience and education alignment.</li>
-                <li>Building meaningful professional connections.</li>
-            </ul>
-        </div>
-
-        <div class="resource-card">
-            <h3>Job Search Strategy</h3>
-            <p>Stop applying into the void. Our strategy sessions cover:</p>
-            <ul class="question-list">
-                <li>Targeting high-yield job boards and company sites.</li>
-                <li>Networking and informational interviewing.</li>
-                <li>Tracking applications and professional follow-ups.</li>
-            </ul>
-        </div>
-
-        <h2>Industry Question Banks</h2>
         <div id="questionsContainer" class="questions-grid"></div>
         
         <div id="questionInterface" class="question-interface">
-            <button id="backToCategories" class="btn" style="margin-bottom: 1.5rem;">&larr; Back to Categories</button>
-            <h3 id="interfaceTitle">Category Title</h3>
-            <p class="selection-counter">Selected: <span id="selectedCount">0</span> / 5</p>
+            <button id="backToCategories" class="btn" style="margin-bottom: 1.5rem; background: var(--primary); color: white;">&larr; Back to Categories</button>
+            <h3 id="interfaceTitle" style="color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 5px;">Category Title</h3>
+            <p id="interfaceDescription" style="font-style: italic; margin-bottom: 1rem;"></p>
+            <p class="selection-counter">Questions Selected: <span id="selectedCount">0</span> / 5</p>
             <div id="interfaceQuestions"></div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button id="startPracticeBtn" class="btn" style="display: none; width: 100%;">Start Mock Interview Session</button>
+            </div>
         </div>
+
+        <div id="bookInterface">
+            <div class="book-item">
+                <img src="images/career-blueprint.jpg" alt="Career Interview Blueprint Cover" width="150" height="220" loading="lazy">
+                <h4>Career Interview Blueprint</h4>
+                <p>A comprehensive guide to ace any interview across various industries.</p>
+                <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Order Now</button>
+            </div>
+            <div class="book-item">
+                <img src="images/medical-blueprint.jpg" alt="Medical Interview Blueprint Cover" width="150" height="220" loading="lazy">
+                <h4>Medical Interview Blueprint</h4>
+                <p>A specialized Job Interview Manual for Healthcare Professionals.</p>
+                <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Order Now</button>
+            </div>
+            <div class="book-item">
+                <img src="images/legal-constitution.jpg" alt="Career Interview Constitution Cover" width="150" height="220" loading="lazy">
+                <h4>Career Interview Constitution</h4>
+                <p>The definitive Job Interview Manual for Legal Professionals.</p>
+                <button class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Order Now</button>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+             <button id="closeBooksBtn" class="btn" style="display: none; background: var(--primary); color: white;">&larr; Back to Categories</button>
+        </div>
+
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🌸 Farai Rwambiwa 🌸 WDD 131 Project</p>

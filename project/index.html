@@ -1,49 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Elpo Interview Coaching</title>
-    <meta name="description" content="Elpo Interview Coaching prepares students and professionals of all industries for academic and job interviews.">
+    <title>Farai Rwambiwa | Developer Portfolio</title>
+    <meta name="description" content="Software Developer portfolio showcasing Python, C#, SQL, and JavaScript projects.">
     <meta name="author" content="Farai Rwambiwa">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/app.mjs" type="module"></script>
 </head>
 <body>
     <header>
-        <h1>Elpo Interview Coaching</h1>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="questions.html">Resources</a>
-            <a href="booking.html">Book a Session</a>
+        <div class="logo">FR<span>.dev</span></div>
+        <button id="menu-btn" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
+
     <main>
         <section class="hero">
-            <h2>Your Confident Expectation of Success</h2>
-            <p>Elpo: a Greek word meaning a confident expectation of success. That is exactly what ELPO INTERVIEW COACHING instills in you for your upcoming Job or Academic Interview. Through our world-class in-person or online Mock Interviews, tailored specifically to your profession, we prepare you to secure your dream role and seize your opportunity.</p>
-            <p>Whether you are an ambitious student stepping into your first role, a graduate seeking academic admission, or an experienced professional aiming for executive leadership, our targeted strategies will transform you from a job seeker into a confident job winner.</p>
-            <a href="booking.html" class="btn">Start Your Preparation</a>
-        </section>
+            <div class="hero-text">
+                
+                <div class="avatar-container">
+                    <img src="images/profile.webp" alt="Farai Rwambiwa" class="profile-pic">
+                </div>
 
-        <div class="ticker-container">
-            <div class="ticker-wrapper">
-                <div id="tickerVisual" class="ticker-visual"></div>
-                <h3 id="dynamicTicker" class="ticker-text">Loading...</h3>
+                <div class="typewriter">
+                    <p>> initializing_developer_mode...</p>
+                </div>
+
+                <h1>Hi, I'm Farai.</h1>
+                <p>I build dynamic, scalable applications using Python, C#, SQL, and modern JavaScript.</p>
+                
+                <div class="local-storage-tracker">
+                    Portfolio Views: <span id="view-count" class="pulse-text">0</span>
+                </div>
             </div>
-        </div>
-
-        <section class="image-section" style="text-align: center; margin-top: 2rem;">
-            <img src="images/interview-queue.jpg" alt="Diverse professionals and students queuing for an interview" width="800" height="500" loading="lazy">
         </section>
+
+        <section class="controls">
+            <button class="filter-btn active" data-filter="all">🌐 All</button>
+            <button class="filter-btn" data-filter="SQL">🗄️ SQL</button>
+            <button class="filter-btn" data-filter="Frontend">🖥️ Frontend</button>
+            <button class="filter-btn" data-filter="Python">🐍 Python</button>
+            <button class="filter-btn" data-filter="C#">🎯 C#</button>
+        </section>
+
+        <section id="project-grid" class="grid"></section>
     </main>
+
+    <dialog id="project-modal">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <p><strong>Tech Stack:</strong> <span id="modal-tech"></span></p>
+            <button id="close-modal">Close Project</button>
+        </div>
+    </dialog>
+
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🌸 Farai Rwambiwa 🌸 WDD 131 Project</p>
-        <p id="lastModified"></p>
-        <p><a href="references.html">References</a></p>
+        <p>&copy; <span id="year"></span> Farai Rwambiwa | WDD 231</p>
+        <a href="i will enter my_LOOM_LINK_HERE kkk" target="_blank" class="video-link">▶ Watch JS Demo</a>
     </footer>
 </body>
 </html>
